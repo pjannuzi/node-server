@@ -1,12 +1,18 @@
-const express = require ('express')
-const app = express()
+const express = require ('express');
+const path = require('path');
 const port = 3000
 
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
-	console.log("got a request");
-	res.send('Hello World');
+	res.sendFile(__dirname + "/views/index.html")
 })
 
 app.listen(port, () => {
-	console.log('Example app listening at port 3000')
+	console.log('App listening at port: 3000')
 })
+
+module.exports = app;

@@ -1,0 +1,230 @@
+/* Cores */
+
+.bg-common {
+    background-color: #f0edea;
+  }
+  .bgg-common {
+    background-color: #f0edea;
+    width: 100%;
+    height: 70px;
+  }
+  .bgg-white {
+     background-color: white;;
+     width: 100%;
+     height: 65px;
+  }
+  .text1{
+    font-size: 40px;
+  }
+  .text2{
+    font-size: 37px;
+  }
+  
+  /* Header */
+  
+  header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    transition: all .25s ease;
+    z-index: 99;
+  }
+  
+  header h1 {
+     padding-top: 10px;
+     transition: all .25s ease;
+  }
+  
+  
+  /* LAYOUT E ESTRUTURA */
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;;
+  }
+  
+  .pcontainer {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 35vw 45vw;
+    grid-template-rows: auto;
+    grid-template-areas: "main main";
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 100vh;
+  }
+  
+  .grid-container div:last-of-type {
+    align-self: center;
+  }
+  
+  .sec1 {
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .sec1 p:first-child {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  
+  .sec1 p:nth-child(2) {
+    font-size: 18px;
+  }
+  
+  .sec1 button {
+    background-color: #ed3237ed;
+    border-radius: 20px;
+    line-height: 40px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size: 16px;
+    transition: all .25s ease;
+    border: none;
+    
+  }
+  .sec1 a {
+    text-decoration:none;
+    color:white
+  }
+  
+  
+  /* MEDIA QUERIES RESPONSIVOS */
+  
+  @media (min-width: 576px) {
+  .pcontainer, .pcontainer-sm 
+    {
+    max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+  .pcontainer, .pcontainer-md, .pcontainer-sm 
+    {
+     max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm 
+    {
+    max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm, .pcontainer-xl
+    {
+    max-width: 1140px;
+    }
+  }
+    
+  @media (min-width: 1400px){ 
+  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm, .pcontainer-xl, .pcontainer-xxl
+    {
+    max-width: 1220px;
+    }
+  }
+  
+  .principal{
+    /*width: 100vw;*/
+    height: 100vh;
+  }
+  
+  .secundario{
+    /*width: 100vw;*/
+    height: 600px;
+    background-color: #ed3237;
+  }
+  
+  .secundario h4{
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+  }
+  .secundario svg {
+    font-size:40px;
+    margin-bottom:10px;
+  }
+  .secundario button {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    background-color:#ed3237;
+    width: 250px;
+    height: 30px;
+    border: solid white 1px;
+    border-radius: 10px;
+  }
+  .secundario a {
+    text-decoration:none;
+    color:white;
+  }
+  .secundario-grid {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 150px 350px;
+    grid-template-areas: "a a a"
+                        "b c d";
+    padding-top: 100px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color: white;
+    column-gap: 85px;
+  }
+  
+  .frase {
+    justify-self: center;
+    text-align: center;
+    grid-area: a;
+  }
+  
+  .terceiro{
+    /*width: 100vw;*/
+    height: 1500px;
+    background-color: white;
+  }
+  
+  .terceiro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 370px 370px 370px 370px 370px 50px;
+    grid-template-areas: "a a"
+                        "b c"
+                        "d e"
+                        "f g"
+                        "h i"
+                        "j k"
+                        "l l";
+    padding-top: 100px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color: black;
+    column-gap: 15px;
+    row-gap: 80px;
+  }
+  
+  .terceiro span {
+    color:gray;
+    border-bottom:1px solid lightgray;
+    padding-bottom:1px;
+  }
+  
+  .terceiro svg {
+    color: gray;
+    margin-left: 5px;
+  }
+  
+  .textcontent {
+    align-self: center;
+  }
+  .lastfrase {
+    justify-self: center;
+    text-align: center;
+    grid-area: l;
+  }
