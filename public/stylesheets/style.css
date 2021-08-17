@@ -1,39 +1,60 @@
 /* Cores */
 
 .bg-common {
-    background-color: #f0edea;
-  }
-  .bgg-common {
-    background-color: #f0edea;
-    width: 100%;
-    height: 70px;
-  }
-  .bgg-white {
-     background-color: white;;
-     width: 100%;
-     height: 65px;
-  }
-  .text1{
-    font-size: 40px;
-  }
-  .text2{
-    font-size: 37px;
-  }
+  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(43,16,88,1) 70%, rgba(38,2,83,0.7049194677871149) 100%);
+ }
+.bgg-white {
+  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(43,16,88,1) 70%, rgba(38,2,83,0.7049194677871149) 100%);
+  width: 100%;
+  height: 65px;
+}
+.text1{
+  color: white;
+  font-size: 40px;
+}
+.text2{
+  color: white;
+  font-size: 37px;
+}
   
-  /* Header */
+/* Header */
   
-  header {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    transition: all .25s ease;
-    z-index: 99;
-  }
-  
-  header h1 {
-     padding-top: 10px;
-     transition: all .25s ease;
-  }
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  transition: all .25s ease;
+  z-index: 99;
+}
+header h1 {
+  padding-top: 15px;
+  transition: all .25s ease;
+  float: left;
+}
+#nvb {
+  transition: all .25s ease;
+  font-weight: 600;
+  color: white;
+}
+.navbarp {
+  list-style-type: none;
+  float: right;
+  padding-top: 30px;
+  text-align: center;
+  margin: 0;
+}
+.navbar-d {
+  list-style-type: none;
+  float: right;
+  padding-top: 23px;
+  text-align: center;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  padding-left: 40px;
+}
+
   
   
   /* LAYOUT E ESTRUTURA */
@@ -66,6 +87,7 @@
   }
   
   .sec1 {
+    color: white;
     align-self: center;
     justify-self: center;
   }
@@ -80,14 +102,15 @@
   }
   
   .sec1 button {
-    background-color: #ed3237ed;
+    background-color: transparent;
     border-radius: 20px;
     line-height: 40px;
     padding: 0 40px;
     display: inline-block;
     font-size: 16px;
     transition: all .25s ease;
-    border: none;
+    border: 1px solid white;
+    margin-top: 50px;
   }
   .sec1 a {
     text-decoration:none;
@@ -151,12 +174,10 @@
   }
   
   .principal{
-    /*width: 100vw;*/
     height: 100vh;
   }
   
   .secundario{
-    /*width: 100vw;*/
     height: 600px;
     background-color: #ed3237;
   }
