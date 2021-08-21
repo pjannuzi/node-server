@@ -315,14 +315,15 @@ nav li {
     }
     .secundario-grid h2{
       font-size: 18px;
-      max-width: 90%;
     }
     .secundario-grid p {
       font-size: 13px;
-      max-width: 90%;
     }
     .secundario h4 {
-      font-size: 18px;
+      font-size: 14px;
+    }
+    .secundario-grid {
+      column-gap: 35px;
     }
     .secundario button {
       width: 143px;
