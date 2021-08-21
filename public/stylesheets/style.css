@@ -125,18 +125,18 @@ nav li {
     font-size: 18px;
   }
   
-  .sec1 button {
+  .swiper-slide button {
     background-color: transparent;
     border-radius: 20px;
     line-height: 40px;
     padding: 0 40px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.9vw;
     transition: all .25s ease;
     border: 1px solid white;
     margin-top: 50px;
   }
-  .sec1 a {
+  .swiper-slide a {
     text-decoration:none;
     color:white
   }
@@ -144,6 +144,16 @@ nav li {
     max-width: 50vw;
     color: white;
     align-self: center
+  }
+  .teste-container {
+    width: 70%;
+  }
+  .teste-container h1 {
+    font-size: 2.3vw;
+  }
+  .teste-container div:nth-child(2){
+    margin-top: 30px;
+    font-size: 1.2vw;
   }
 
 
