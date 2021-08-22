@@ -23,7 +23,7 @@ header {
 }
 .hd-container {
   display: grid;
-  grid-template-columns: 25vw 55vw;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 100px;
   grid-template-areas: "a b"
                       "c c";
@@ -260,7 +260,7 @@ nav ul {
 
   /* MEDIA QUERIES RESPONSIVOS */
   
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     #nvb {
       background: rgba(43,16,88,1);
       visibility: hidden;
@@ -320,6 +320,13 @@ nav ul {
       transform: rotate(-135deg);
       top: -7px;
     }
+    .hd-container {
+      grid-template-columns: 50% 50%;
+    }
+    .hd-container div:last-child {
+      align-self: center;
+      justify-self: right;
+    }
     .swiper-slide button {
       font-size: 10px;
       margin-top: 30px;
@@ -350,9 +357,9 @@ nav ul {
       font-size: 9px;
     }
     .logo {
-      width: 7.2rem;
-      height: 25px;
-      background-size: 7.2rem 25px;
+      width: 10rem;
+      height: 36px;
+      background-size: 10rem 36px;
     }
     .ssection {
       display: none;
