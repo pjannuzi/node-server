@@ -39,14 +39,9 @@ header {
 }
 .logo {
   float: left;
-  width: 260px;
-  height: 57px;
   overflow: hidden;
-  text-indent: -9999px;
-  background-image: url(/images/jetcontent.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: block;
+  width: 220px;
 }
 #nvb {
   transition: all .25s ease;
@@ -357,9 +352,8 @@ nav ul {
       font-size: 9px;
     }
     .logo {
-      width: 10rem;
-      height: 36px;
-      background-size: 10rem 36px;
+      width: 180px;
+      margin-top: 5px;
     }
     .ssection {
       display: none;
