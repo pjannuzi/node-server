@@ -321,7 +321,8 @@ nav ul {
       top: -7px;
     }
     .swiper-slide button {
-      font-size: 10px
+      font-size: 10px;
+      margin-top: 30px;
     }
     .fsection-grid h2{
       font-size: 18px;
@@ -351,6 +352,7 @@ nav ul {
     .logo {
       width: 7.2rem;
       height: 25px;
+      background-size: 7.2rem 25px;
     }
     .ssection {
       display: none;
