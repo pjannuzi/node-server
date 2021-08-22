@@ -1,59 +1,45 @@
+/* Body  */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;;
+}
+
 /* Cores */
 
 .bg-common {
   background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(43,16,88,1) 70%, rgba(38,2,83,0.7049194677871149) 100%);
- }
-.bgg-common {
-  background: transparent;
-  width: 100%;
-  height: 65px;
+  height: 96vh;
 }
-.bgg-white {
-  background: white;
-  width: 100%;
-  height: 65px;
-}
-.text1{
-  color: white;
-  font-size: 40px;
-}
-.text2{
-  color: black;
-  font-size: 37px;
-  
-}
-  
-/* Header */
+
+/* Header Comum */
   
 header {
   width: 100%;
-  height: 90px;
+  height: 100px;
   position: absolute;
   transition: all .25s ease;
+}
+.hd-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  height: 100px;
 }
 #logo {
   width: 250px;
   float: left;
-  margin-top: 30px;
+  position: relative;
+  top: 25px;
 }
 #nvb {
   transition: all .25s ease;
   font-weight: 600;
   color: white;
   display: flex;
-}
-#btn-mobile {
-  display: none;
-  float: right;
-  margin-right: 20px;
-}
-.btnnj {
-  color: white;
-  margin-top: 36px;
-}
-.btn-mobile {
-  margin-top: 15px;
-  color: black;
 }
 .navbarp {
   list-style-type: none;
@@ -69,183 +55,118 @@ nav a {
 nav li {
   padding-left: 40px;
 }
-.nvblack {
+
+/* Menu Mobile */
+
+#btn-mobile {
+  display: none;
+  float: right;
+  margin-right: 20px;
+}
+.btnnj {
+  color: white;
+  margin-top: 36px;
+}
+.btn-mobile {
+  margin-top: 15px;
   color: black;
 }
 
-  
-  
-  /* LAYOUT E ESTRUTURA */
-  body {
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;;
-  }
-  
-  .pcontainer {
-    width: 100%;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto;
-    height: 90px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 35vw 45vw;
-    grid-template-rows: auto;
-    grid-template-areas: "main main";
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 100vh;
-  }
-  
-  .grid-container div:last-of-type {
-    align-self: center;
-  }
-
-  .swiper-slide button {
-    background-color: transparent;
-    border-radius: 20px;
-    line-height: 40px;
-    padding: 0 40px;
-    display: inline-block;
-    font-size: 0.9vw;
-    transition: all .25s ease;
-    border: 1px solid white;
-    margin-top: 50px;
-  }
-  .swiper-slide {
-    display: grid;
-    grid-template-columns: 35vw 45vw;
-    grid-template-rows: 100vh;
-  }
-  .swiper-slide a {
-    text-decoration:none;
-    color:white
-  }
-  .swiper-container {
-    margin-right: 10vw;
-    margin-left: 10vw;
-    width: 80vw;
-    height: 100vh;
-    color: white;
-  }
-  .slide {
-    align-self: center;
-  }
-
-
-  .secundario{
-    height: 600px;
-    background: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(43,16,88,1) 70%, rgba(38,2,83,0.7049194677871149) 100%);
-    color:white;
-  }
-  
-  .secundario h4{
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-  }
-  .secundario svg {
-    font-size:40px;
-    margin-bottom:10px;
-  }
-  .secundario button {
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
-    background: transparent;
-    width: 250px;
-    height: 30px;
-    border: solid white 1px;
-    border-radius: 10px;
-  }
-  .secundario a {
-    text-decoration:none;
-    color:white;
-  }
-  .secundario-grid {
-    display: grid;
-    grid-template-columns: 28% 28% 28%;
-    grid-template-rows: 150px 350px;
-    grid-template-areas: "a a a"
-                        "b c d";
-    padding-top: 100px;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    column-gap: 85px;
-  }
-  
-  .frase {
-    justify-self: center;
-    text-align: center;
-    grid-area: a;
-  }
-  
-  .terceiro{
-    /*width: 100vw;*/
-    height: auto;
-    background-color: #FBFBFA;
-  }
-  
-  .terceiro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 370px 370px 370px 370px 370px 50px;
-    grid-template-areas: "a a"
-                        "b c"
-                        "d e"
-                        "f g"
-                        "h i"
-                        "j k"
-                        "l l";
-    padding-top: 100px;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    color: black;
-    column-gap: 15px;
-    row-gap: 80px;
-  }
-  
-  .terceiro span {
-    color:gray;
-    border-bottom:1px solid lightgray;
-    padding-bottom:1px;
-  }
-  
-  .terceiro svg {
-    color: gray;
-    margin-left: 5px;
-  }
-  .terceiro img {
-    width: 400px;
-  }
-.imgmck {
-  justify-self: center;
+/* Slide */
+.swiper-container {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  width: 80vw;
+  color: white;
+  height: 90vh;
+  top: 100px;
+}
+.slide {
   align-self: center;
 }
-  
-  .textcontent {
-    align-self: center;
-  }
-  .lastfrase {
-    justify-self: center;
-    text-align: center;
-    grid-area: l;
-  }
-.quadro {
-  background: white;
-  height: 300px;
+.swiper-slide {
+  display: grid;
+  grid-template-columns: 35vw 45vw;
+  grid-template-rows: 80vh;
 }
-.quadro-container {
+.swiper-slide a {
+  text-decoration:none;
+  color:white
+}
+.swiper-slide button {
+  background-color: transparent;
+  border-radius: 20px;
+  line-height: 40px;
+  padding: 0 40px;
+  display: inline-block;
+  font-size: 0.9vw;
+  transition: all .25s ease;
+  border: 1px solid white;
+  margin-top: 50px;
+}
+
+/* Primeira Section */
+
+.fsection{
+  height: 560px;
+  color:black;
+}
+.fsection-grid {
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  grid-template-rows: 150px 350px;
+  grid-template-areas: "a a a"
+                      "b c d";
+  padding-top: 100px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  column-gap: 85px;
+}
+.frase {
+  justify-self: center;
+  text-align: center;
+  grid-area: a;
+}
+.fsection h4{
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+}
+.fsection svg {
+  font-size:40px;
+  margin-bottom:10px;
+}
+.fsection button {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+  width: 250px;
+  height: 30px;
+  border: solid white 1px;
+  border-radius: 10px;
+}
+.fsection a {
+  text-decoration:none;
+  color:white;
+}
+
+/* Segunda Section */
+
+.ssection {
+  background: white;
+  height: 500px;
+  background-image: linear-gradient(45deg, #F4F4F4, #FBFBFA);
+  transform: skewY(-10deg);
+}
+.ssection-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 110px;
   grid-template-areas: "a a a"
                       "b c d";
-  padding-top: 30px;
+  padding-top: 120px;
   margin-left: 15vw;
   margin-right: 15vw;
+  transform: skewY(11deg);
 }
 .qd1 {
   grid-area: a;
@@ -260,13 +181,75 @@ nav li {
   justify-self: center;
   align-self: center;
 }
-.quadro img {
+.ssection img {
   filter: grayscale();
   transition: .3s;
 }
-.quadro img:hover {
+.ssection img:hover {
   filter:none;
 }
+
+/* Terceira Section */
+
+.tsection{
+  height: auto;
+  background-color: white;
+}  
+.tsection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 370px 370px 370px 370px 370px 50px;
+  grid-template-areas: "a a"
+                      "b c"
+                      "d e"
+                      "f g"
+                      "h i"
+                      "l l";
+  padding-top: 100px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  color: black;
+  column-gap: 15px;
+  row-gap: 20px;
+}
+.imgmck {
+  justify-self: center;
+  align-self: center;
+}
+.tsection img {
+  width: 400px;
+ }
+
+.textcontent {
+  align-self: center;
+}
+.lastfrase {
+  justify-self: center;
+  text-align: center;
+  grid-area: l;
+}
+.tsection span {
+  color:gray;
+  border-bottom:1px solid lightgray;
+  padding-bottom:1px;
+}
+.tsection svg {
+  color: gray;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* MEDIA QUERIES RESPONSIVOS */
   
@@ -342,26 +325,26 @@ nav li {
       transform: rotate(-135deg);
       top: -7px;
     }
-    .secundario-grid h2{
+    .fsection-grid h2{
       font-size: 18px;
     }
-    .secundario-grid p {
+    .fsection-grid p {
       font-size: 13px;
     }
-    .secundario h4 {
+    .fsection h4 {
       font-size: 14px;
     }
-    .secundario-grid {
+    .fsection-grid {
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 35px;
       margin-left: 5vw;
       margin-right: 5vw;
     }
-    .secundario button {
+    .fsection button {
       width: 143px;
       font-size: 9px;
     }
-    .secundario button:last-child {
+    .fsection button:last-child {
       width: 100px;
       font-size: 9px;
     }
@@ -371,14 +354,14 @@ nav li {
   }
   
   @media (min-width: 992px) {
-  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm 
+  .hd-container, .hd-container-lg, .hd-container-md, .hd-container-sm 
     {
     max-width: 960px;
     }
   }
   
   @media (min-width: 1200px) {
-  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm, .pcontainer-xl
+  .hd-container, .hd-container-lg, .hd-container-md, .hd-container-sm, .hd-container-xl
     {
     max-width: 1140px;
     }
@@ -386,14 +369,15 @@ nav li {
   }
     
   @media (min-width: 1400px){ 
-  .pcontainer, .pcontainer-lg, .pcontainer-md, .pcontainer-sm, .pcontainer-xl, .pcontainer-xxl
+  .hd-container, .hd-container-lg, .hd-container-md, .hd-container-sm, .hd-container-xl, .hd-container-xxl
     {
     max-width: 1220px;
     }
-
   }
 
-/* ---------------------------- CYCLE KEYFRAMES ---------------------------- */
+
+
+  /* ---------------------------- CYCLE KEYFRAMES ---------------------------- */
 
 @keyframes cycle {
   0% {
