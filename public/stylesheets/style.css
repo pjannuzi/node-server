@@ -27,15 +27,14 @@
   
 header {
   width: 100%;
-  height: 70px;
-  position: fixed;
+  height: 90px;
+  position: absolute;
   transition: all .25s ease;
-  z-index: 99;
 }
-header h1 {
-  padding-top: 15px;
-  transition: all .25s ease;
+#logo {
+  width: 250px;
   float: left;
+  margin-top: 30px;
 }
 #nvb {
   transition: all .25s ease;
@@ -50,7 +49,7 @@ header h1 {
 }
 .btnnj {
   color: white;
-  margin-top: 20px;
+  margin-top: 36px;
 }
 .btn-mobile {
   margin-top: 15px;
@@ -59,14 +58,7 @@ header h1 {
 .navbarp {
   list-style-type: none;
   float: right;
-  padding-top: 30px;
-  text-align: center;
-  margin: 0;
-}
-.navbar-d {
-  list-style-type: none;
-  float: right;
-  padding-top: 23px;
+  padding-top: 40px;
   text-align: center;
   margin: 0;
 }
@@ -96,6 +88,7 @@ nav li {
     padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto;
+    height: 90px;
   }
   
   .grid-container {
@@ -111,20 +104,7 @@ nav li {
   .grid-container div:last-of-type {
     align-self: center;
   }
-  
-  .sec1 {
-    color: white;
-    align-self: center;
-    justify-self: center;
-  }
-  .sec1 p:first-child {
-    font-size: 45px;
-    font-weight: 700;
-  }
-  .sec1 p:nth-child(2) {
-    font-size: 18px;
-  }
-  
+
   .swiper-slide button {
     background-color: transparent;
     border-radius: 20px;
@@ -136,32 +116,27 @@ nav li {
     border: 1px solid white;
     margin-top: 50px;
   }
+  .swiper-slide {
+    display: grid;
+    grid-template-columns: 35vw 45vw;
+    grid-template-rows: 100vh;
+  }
   .swiper-slide a {
     text-decoration:none;
     color:white
   }
   .swiper-container {
-    max-width: 50vw;
-    color: white;
-    align-self: center
-  }
-  .teste-container {
-    width: 70%;
-  }
-  .teste-container h1 {
-    font-size: 2.3vw;
-  }
-  .teste-container div:nth-child(2){
-    margin-top: 30px;
-    font-size: 1.2vw;
-  }
-
-
-
-  .principal{
+    margin-right: 10vw;
+    margin-left: 10vw;
+    width: 80vw;
     height: 100vh;
+    color: white;
   }
-  
+  .slide {
+    align-self: center;
+  }
+
+
   .secundario{
     height: 600px;
     background: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(43,16,88,1) 70%, rgba(38,2,83,0.7049194677871149) 100%);
@@ -407,6 +382,7 @@ nav li {
     {
     max-width: 1140px;
     }
+
   }
     
   @media (min-width: 1400px){ 
@@ -414,6 +390,7 @@ nav li {
     {
     max-width: 1220px;
     }
+
   }
 
 /* ---------------------------- CYCLE KEYFRAMES ---------------------------- */
