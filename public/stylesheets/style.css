@@ -277,6 +277,7 @@ nav ul {
     }
     nav li {
       padding-left:0;
+      background-color: red;
     }
     #nav.active #nvb{
       visibility: visible;
@@ -319,6 +320,9 @@ nav ul {
       transform: rotate(-135deg);
       top: -7px;
     }
+    .swiper-slide button {
+      font-size: 10px
+    }
     .fsection-grid h2{
       font-size: 18px;
     }
@@ -345,8 +349,8 @@ nav ul {
       font-size: 9px;
     }
     .logo {
-      width: 180px;
-      height: 40px;
+      width: 7.2rem;
+      height: 25px;
     }
     .ssection {
       display: none;
@@ -364,7 +368,7 @@ nav ul {
       transform: skewY(-10deg);
     }
     .tsection-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: 100%;
           grid-template-rows: 150px;
           grid-template-areas:
             "a"
