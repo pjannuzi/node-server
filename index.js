@@ -1,22 +1,21 @@
-const express = require ('express');
 const path = require('path');
-const port = 3000
 
+const express = require ('express');
+
+const errorController = require('./controllers/error');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
+const indexRoutes = require('./routes/index');
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-	res.sendFile(__dirname + "/views/index.html")
-})
+app.use(indexRoutes);
 
-app.use(function(req, res, next) {
-    res.status(404).sendFile(__dirname + "/views/404.html")
-});
+app.use(errorController.get404);
 
-app.listen(port, () => {
-	console.log('App listening at port: 3000')
-})
-
-module.exports = app;
+app.listen(3000);

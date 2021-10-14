@@ -1,7 +1,7 @@
 {
   "name": "nodepzada",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Jet Content",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,11 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }
