@@ -32,8 +32,8 @@
                 <span id="hmb"></span>
               </button>
               <ul id="nvb" class="navbarp">
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Ecommerce</a></li>
+                <li><a href="#">Chatbot</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Tecnologias</a></li>
               </ul>  
@@ -48,24 +48,25 @@
               <!-- Slides -->
                 <div class="swiper-slide">
                   <div data-aos="fade-up" class="slide">
-                    <h1>Tudo o que sua loja virtual precisa <u>num só lugar</u>.</h1>
-                    <p>Avalie a plataforma mais completa do mercado por 15 dias e comprove!<br><br>É fácil, rápido e sem compromisso ;)</p>
+                    <!-- alterado -->
+                    <h1><u>Converta mais clientes</u> com conversas automatizadas</h1>
+                    <br><p>Engaje sua audiência de <u>forma natural</u>!
+                    <br>Aumente sua conversão e melhore o relacionamento com o cliente!</p>
                     <button><a href="#">Quero saber mais!</a></button>
                   </div>
                   <div data-aos="fade-up" style="width: 100%;
                   height: 100%; background: url('/images/bannersite.png');
                   background-size: contain;
                   background-repeat: no-repeat;" class="slide">
-                    
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="slide">
+                  <div id="av" style="display: none" class="slide">
                     <h1>Desenvolvimentos de Sites Otimizados para o Google</h1>
                     <p>Melhore o posicionamento de seu site na busca orgânica do Google com a Otimização de Sites(SEO).</p>
                     <button><a href="#">COMO FUNCIONA?</a></button>
                   </div>
-                  <div data-aos="fade-up" style="width: 100%;
+                  <div id="av1" style="display: none; width: 100%;
                   height: 100%; background: url('/images/foguete.png');
                   background-size: contain;
                   background-repeat: no-repeat;" class="slide">
@@ -73,9 +74,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div data-aos="fade-up" class="slide">
+                  <div class="slide">
                     <h1><b>A hora de ter um Ecommerce Profissional!</b></h1>
-                    <p>Tenha uma loja virtual com todos os seus produtos expostos divididos por categorias e com todas as informações necessárias para facilitar a divulgação da sua empresa.</p>
+                    <p>Tenha uma loja virstual com todos os seus produtos expostos divididos por categorias e com todas as informações necessárias para facilitar a divulgação da sua empresa.</p>
                     <button><a href="#">Quero um Ecommerce!</a></button>
                   </div>
                   <div style="width: 100%;
@@ -84,6 +85,7 @@
                   background-repeat: no-repeat;" class="slide">
                     
                   </div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
@@ -143,7 +145,6 @@
         </section>
       </main>
       <footer>
-        aa
       </footer>
 
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -163,7 +164,7 @@
         speed: 1000,
           
         autoplay: {
-        delay: 5000,
+        delay: 10000,
         },
     
         effect: 'fade',
@@ -175,21 +176,5 @@
       <script>
         AOS.init();
       </script>
-      <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
-      </script>
-      <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-      <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
-      </script>
-      <script>
-          (function () {
-              window.onload = function () {
-                  new BlipChat()
-                  .withAppKey('dGVzdGVwZWRyb2phbm51emk6OTMxOGEzMDMtMWVlMS00MzcxLWIwYmQtOTc1ZjM1ZDA4N2Zk')
-                  .withButton({"color":"#2CC3D5","icon":""})
-                  .withCustomCommonUrl('https://chat.blip.ai/')
-                  .build();
-              }
-          })();
-      </script>                       
   </body>
 </html>
