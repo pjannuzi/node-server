@@ -19,9 +19,7 @@ function myFunction() {
   }
 }
 
-function DisplayInBlock() {
+setTimeout(function () {
   document.getElementById("av").style.display = "block";
   document.getElementById("av1").style.display = "block";
-}
-
-window.onload = DisplayInBlock;
+}, 500)
