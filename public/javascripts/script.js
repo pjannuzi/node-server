@@ -17,9 +17,11 @@ function myFunction() {
   } else {
     document.getElementById("btn-mobile").className = "btnnj";
   }
-};
+}
 
-window.onload = function() {
+function DisplayInBlock() {
   document.getElementById("av").style.display = "block";
   document.getElementById("av1").style.display = "block";
-};
+}
+
+window.onload = DisplayInBlock;
